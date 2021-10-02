@@ -7,11 +7,15 @@
  * 
 */
 
-function factorial(n) {
-    // Напишите код здесь
+function factorial(n){
+    if(n == 0 || n == 1){
+        return 1;
+    }else{
+        return n * factorial(n-1);
+    }
 }
 
-// Протестируйте решение, вызывая функцию с разными аргументами:
+
 
 console.log(factorial(0)); // 1
 console.log(factorial(1)); // 1

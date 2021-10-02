@@ -8,11 +8,16 @@
  * 
 */
 
-function anagram(str1, str2) {
-    // Напишите код здесь
-}
+function anagram(str1, str2){
+     if (str1.toLowerCase() === str2.toLowerCase()) {
+        return false
+     }
+  else {
+    return str1.toLowerCase().split("").sort().join("") === str2.toLowerCase().split("").sort().join("")
+}}
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(anagram('finder', 'Friend')); // true
 console.log(anagram('hello', 'bye')); // false
+
